@@ -1,17 +1,19 @@
 <template>
-    <v-table>
+    <v-table fixed-header>
         <thead>
             <tr>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Deadline</th>
-                <th>Priority</th>
-                <th>Complete?</th>
-                <th>Actions</th>
+                <th class="text-center">Title</th>
+                <th class="text-center">Description</th>
+                <th class="text-center">Deadline</th>
+                <th class="text-center">Priority</th>
+                <th class="text-center">Complete?</th>
+                <th class="text-center">Actions</th>
             </tr>
         </thead>
         <tbody>
+            <tr>
 
+            </tr>
         </tbody>
     </v-table>
 </template>
