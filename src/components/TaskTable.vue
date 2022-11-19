@@ -77,7 +77,7 @@
                     </v-tooltip>
                     <v-tooltip text="Delete" location="bottom">
                         <template v-slot:activator="{ props }">
-                            <v-btn v-bind="props" variant="text" color="red" icon="mdi-delete"></v-btn>
+                            <v-btn v-bind="props" variant="text" color="red" icon="mdi-delete" @click="deleteTask(item.uuid)"></v-btn>
                         </template>
                     </v-tooltip>
                     
@@ -109,6 +109,7 @@ export default {
 
             dialog: false,
             addSnackbar: false,
+            errorSnackbar: false,
             tasks: [
                 {
                     title: 'Test',
@@ -124,7 +125,7 @@ export default {
         // Validate data, add task to list
         addTask(t, desc, date, p) {
             if(date == null) {
-                this.addSnackbar = true;
+                this.errorSnackbar = true;
                 return;
             }
 
@@ -132,6 +133,9 @@ export default {
             this.dialog = false;
             this.addSnackbar = true;
             this.resetValues();
+        },
+        deleteTask(id) {
+            this.tasks = this.tasks.filter((task) => id != task.uuid);
         },
         // Clear input fields
         resetValues() {
