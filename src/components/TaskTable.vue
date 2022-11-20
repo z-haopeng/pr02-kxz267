@@ -137,14 +137,14 @@ export default {
             successSnackbar: false,
             successText: '',
             tasks: [
-                {
-                    title: 'Test',
-                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis excepturi, est quasi minus possimus, amet iure debitis neque ea, sequi totam atque suscipit assumenda nulla quibusdam porro impedit nemo similique!',
-                    deadline: new Date(),
-                    priority: 'low',
-                    complete: false,
-                    uuid: uuid.v4(),
-                }
+                // {
+                //     title: 'Test',
+                //     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis excepturi, est quasi minus possimus, amet iure debitis neque ea, sequi totam atque suscipit assumenda nulla quibusdam porro impedit nemo similique!',
+                //     deadline: new Date(),
+                //     priority: 'low',
+                //     complete: false,
+                //     uuid: uuid.v4(),
+                // }
             ]
         }
     },
